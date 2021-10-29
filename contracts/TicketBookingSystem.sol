@@ -1,6 +1,8 @@
-// SPDX-License-Identifier: GPL-3.0
+// SPDX-License-Identifier: MIT
 
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity ^0.8.0;
+
+import "@openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 
 /**
  * @title Storage
@@ -10,13 +12,7 @@ contract TicketBookingSystem {
 
     address payable public seller;
     address payable public buyer;
-    struct Show {
-        string      titleOfShow;        //Title of the Show
-        string[]    dateOfShow;         //Date of the Show
-        uint32      price;              //Price
-        string[]    seatNumberAndRow;   //Seat
-        string      linkToSeatView;     //Link to seat view
-    }
+    address payable addressToTicket;
     
     modifier onlyBuyer() {
         require( msg.sender == buyer, "Only buyer can call this.");
@@ -26,6 +22,15 @@ contract TicketBookingSystem {
     modifier onlySeller() {
         require( msg.sender == seller, "Only seller can call this.");
         _;
+    }
+    
+    /**
+     * @dev Let seller add show
+     * 
+     */
+    function addShow() public onlySeller {
+        ShowTicket newTicket = new ShowTicket();
+        addressToTicket = address(newTicket);
     }
     
     /**

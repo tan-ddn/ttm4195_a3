@@ -58,7 +58,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Ticket.sol": "TicketBookingSystem"
+			"contracts/TicketBookingSystem.sol": "TicketBookingSystem"
 		},
 		"evmVersion": "london",
 		"libraries": {},
@@ -72,12 +72,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/Ticket.sol": {
-			"keccak256": "0x0e83ef70431842fc98a8023d157ec1b8afc53f2edba89eef4f4cf2e2b0599723",
+		"contracts/TicketBookingSystem.sol": {
+			"keccak256": "0x3cd9060801d78ac7a6c797109c6533f0eb4b2a861cdc2d1bdfbe89284c5c5ab1",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://eadea2656bc7c11ca56d27cff34e6bb77457d0829ce5bc64a6cf52829020ee1b",
-				"dweb:/ipfs/QmNt4YvYBiM6RGX9GoB7sNT1YBvMnhZ2aqdvtvgnsoxYm4"
+				"bzz-raw://df8b6401c9c8a37d7f7ca08ae04802e41c516cfd755ab4e1f20af696e6205ca7",
+				"dweb:/ipfs/QmRi9TCSCGTenxjbiYbpVpfV64i2JsTkuHVTX2ywHGP7SQ"
 			]
 		}
 	},
