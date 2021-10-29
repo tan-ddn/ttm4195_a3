@@ -1,0 +1,85 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "buyTicket",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buyer",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "seller",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Store & retrieve value in a variable",
+			"kind": "dev",
+			"methods": {
+				"buyTicket()": {
+					"details": "Let buyer buy ticket "
+				}
+			},
+			"title": "Storage",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Ticket.sol": "TicketBookingSystem"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Ticket.sol": {
+			"keccak256": "0x0e83ef70431842fc98a8023d157ec1b8afc53f2edba89eef4f4cf2e2b0599723",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://eadea2656bc7c11ca56d27cff34e6bb77457d0829ce5bc64a6cf52829020ee1b",
+				"dweb:/ipfs/QmNt4YvYBiM6RGX9GoB7sNT1YBvMnhZ2aqdvtvgnsoxYm4"
+			]
+		}
+	},
+	"version": 1
+}
