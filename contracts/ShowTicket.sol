@@ -17,8 +17,6 @@ contract ShowTicket is ERC721 {
     string showTitle = 'Hamlet';
     string showDate = '12/12/2021';
     uint32 price = 10;
-    uint8[4] seatNumber = [1, 2, 3, 4];
-    string[3] seatRow = ['A', 'B', 'C'];
     string seatPlanLink = 'www.seatplan.com';
     
     constructor() ERC721("Group 8 Show Ticket", "G8ST") {
@@ -26,11 +24,14 @@ contract ShowTicket is ERC721 {
         tokenId = 0;
     }
     
-    function buyTicket(uint8 _seatNumber, string _seatRow) public returns(int256) {
-        uint256 newItemId = tokenId;
+    function buyTicket(string memory _seatNumberAndRow) public returns(uint256) {
+        //uint256 newItemId = tokenId;
+        uint256 newItemId = uint256(sha256(abi.encodePacked(_seatNumberAndRow)));
         _safeMint(msg.sender, newItemId);
-        tokenId += 1;
+        //tokenId += 1;
         return newItemId;
     }
+    
+    //function getShowDetails() public returns()
     
 }
