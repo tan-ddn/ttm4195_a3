@@ -174,6 +174,83 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "getShowDetails",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string[]",
+						"name": "",
+						"type": "string[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					}
+				],
+				"name": "getTicketDetails",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -301,6 +378,40 @@
 			{
 				"inputs": [
 					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "show",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "date",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "time",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "numberOfSeat",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "bytes4",
 						"name": "interfaceId",
 						"type": "bytes4"
@@ -324,6 +435,50 @@
 					{
 						"internalType": "string",
 						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ticket",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "date",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "time",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "seatNumberAndRow",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "seatPlan",
 						"type": "string"
 					}
 				],
@@ -515,11 +670,11 @@
 			]
 		},
 		"contracts/ShowTicket.sol": {
-			"keccak256": "0x236e3aea05c656ce435c13078a72b261e937a24080cf2ff34565f3a312473708",
+			"keccak256": "0xc27ca69ea61f28d3d499f8faf2ebac50130031a37ed6203f4b19363c81b00883",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://85cffb6344c0a68970065c58aaee3f2f09ec486301e8258c3f7186c9b6d4e26d",
-				"dweb:/ipfs/Qmcd619rFg6abE4zhWMkk17X2f7wQigRBHyCoWoVWpY5VD"
+				"bzz-raw://9fd6850491540bfe7fe0e86e91b083a4dd9c56833993e33bc0a09ec23efd405b",
+				"dweb:/ipfs/QmdxLw5Vsi1PadT9p3wfDXgoFfonVY1YM8g6B8rbX6posD"
 			]
 		}
 	},
