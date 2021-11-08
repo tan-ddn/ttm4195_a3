@@ -188,11 +188,6 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					},
-					{
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -216,11 +211,6 @@
 				],
 				"name": "getTicketDetails",
 				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					},
 					{
 						"internalType": "string",
 						"name": "",
@@ -391,19 +381,39 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
-						"name": "date",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "time",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "year",
+						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "numberOfSeat",
+						"name": "month",
 						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "day",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "hour",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "min",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint8",
+						"name": "numberOfSeat",
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -457,14 +467,9 @@
 						"type": "string"
 					},
 					{
-						"internalType": "string",
-						"name": "date",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "time",
-						"type": "string"
+						"internalType": "uint256",
+						"name": "timestamp",
+						"type": "uint256"
 					},
 					{
 						"internalType": "string",
@@ -670,11 +675,19 @@
 			]
 		},
 		"contracts/ShowTicket.sol": {
-			"keccak256": "0xc27ca69ea61f28d3d499f8faf2ebac50130031a37ed6203f4b19363c81b00883",
+			"keccak256": "0x67b515887f0d5fa3a41636074f988ebfda6d000a470acf143934d2706dad0e57",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://9fd6850491540bfe7fe0e86e91b083a4dd9c56833993e33bc0a09ec23efd405b",
-				"dweb:/ipfs/QmdxLw5Vsi1PadT9p3wfDXgoFfonVY1YM8g6B8rbX6posD"
+				"bzz-raw://8561f19fec1d0cb9c7b5fd1f332f0d719d1caef937f6cb00e1438e0401c44142",
+				"dweb:/ipfs/QmYTYgCnUh7hZLoSpyowo23w1SrQoejSzuzuedDK8Jt7Ma"
+			]
+		},
+		"https://github.com/bokkypoobah/BokkyPooBahsDateTimeLibrary/blob/f6e81995da728f897cb0cd090f887eac8711ce61/contracts/BokkyPooBahsDateTimeLibrary.sol": {
+			"keccak256": "0xfc70adbccff46f55614fe8ddcd6966a7cbae0bfcbe787e58cb1a327a5e8bfdf6",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3e21bb9bf2a1a5062e6b17a2af3b557c8f26e3fa2bcd1ba5e4a25995ea6f34aa",
+				"dweb:/ipfs/QmaF1KtnGxdKv6wfhhz27Prc9KfLJLfFLpthPNiP2FZuax"
 			]
 		}
 	},
